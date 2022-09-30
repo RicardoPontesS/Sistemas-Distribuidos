@@ -2,7 +2,6 @@ package cliente;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-
 import servidor.Servidor;
 
 public interface InterfaceCli extends Remote{
