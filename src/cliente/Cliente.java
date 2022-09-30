@@ -12,6 +12,7 @@ import java.rmi.NotBoundException;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONStringer;
 
 public class Cliente {
 	private String nome;
@@ -36,8 +37,13 @@ public class Cliente {
 	public void sendMsg(Servidor server,String destinatario,String msg) throws RemoteException {
 		server.receberMensagem(nome, destinatario, msg);
 	}
+	/*
 	public void sendMsg(Cliente remetente,String destinatario, String msg) throws RemoteException {
 		serverIf.getMenssagem(destinatario, msg);
+		}
+	*/
+	public void sendMsg(Servidor server,JSONObject jsonObject) throws RemoteException {
+		serverIf.getMenssagem(server, jsonObject);
 		}
 		
 		public static void main(String[] args) throws RemoteException, MalformedURLException, NotBoundException, JSONException {
@@ -45,16 +51,17 @@ public class Cliente {
 			String serviceName="ChatSistemasDistribuidos";
 			
 			serverIf = ( InterfaceServer )Naming.lookup("rmi://" + hostName + "/" + serviceName);	
-			//FileWriter arquivoTexto = null;
 			JSONObject objJSON = new JSONObject();
 			Cliente c1 = new Cliente("joao");
 			Cliente c2 = new Cliente("maria");
 			Servidor server = new Servidor();
 			
-			objJSON.put("maria", "Olá, tudo bem?");
-			System.out.println(objJSON.toString());
-			
-			c1.sendMsg(server,"maria", "olá, tudo bem?");
+			objJSON.put("maria","Olá, tudo bem?");
+			objJSON.put("maria","Olá");
+			//System.out.println(objJSON.toString());	
+			//c1.sendMsg(server,"maria", "olá, tudo bem?");
+			c1.sendMsg(server,objJSON.toString(), serviceName);
+			c1.sendMsg(server,objJSON.toString(), serviceName);
 			c1.checkMsg(server, "joao");
 		}
 	}
