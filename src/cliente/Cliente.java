@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.rmi.ConnectException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
-
+import org.json.simple.JSONObject;
 
 public class Cliente {
 	private String nome;
