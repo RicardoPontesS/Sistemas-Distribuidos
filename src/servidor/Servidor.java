@@ -1,6 +1,10 @@
 package servidor;
 
 import java.util.ArrayList;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import cliente.Mensagem;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -29,7 +33,7 @@ public class Servidor extends UnicastRemoteObject implements InterfaceServer {
 		mensagens.add(msg);
 
 	}
-
+/*
 	public void getMenssagem(String remetente, String destinatario) {
 		String str = "";
 		System.out.println(mensagens.size());
@@ -43,7 +47,7 @@ public class Servidor extends UnicastRemoteObject implements InterfaceServer {
 		if (str.isBlank())
 			System.out.println("nenhuma msg!");
 	}
-	
+*/
 	public static void registroRMI() {
 		try{
 			java.rmi.registry.LocateRegistry.createRegistry(1099);
@@ -68,6 +72,23 @@ public class Servidor extends UnicastRemoteObject implements InterfaceServer {
 		catch(Exception e){
 			System.out.println("Problemas ao executar o servidor.");
 		}	
+	}
+
+	@Override
+	public void getMenssagem(Servidor server, JSONObject jsonObject) throws RemoteException {
+		JSONObject destinatario = jsonObject ;
+		String str = "";
+		System.out.println(mensagens.size());
+		for (Mensagem m : mensagens) {
+
+			if (m.getRemetente().equals(server) && m.getDestinatario().equals(destinatario)) {
+				str = m.getMsg();
+				System.out.println(str);
+			}
+		}
+		if (str.isBlank())
+			System.out.println("nenhuma msg!");
+		
 	}
 
 }

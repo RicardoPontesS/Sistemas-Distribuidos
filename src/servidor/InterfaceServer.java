@@ -1,6 +1,8 @@
 package servidor;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import org.json.JSONObject;

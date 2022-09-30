@@ -58,11 +58,14 @@ public class Cliente {
 			
 			objJSON.put("maria","Olá, tudo bem?");
 			objJSON.put("maria","Olá");
+			
 			//System.out.println(objJSON.toString());	
+			System.out.println(objJSON.toString());	
 			//c1.sendMsg(server,"maria", "olá, tudo bem?");
 			c1.sendMsg(server,objJSON.toString(), serviceName);
 			c1.sendMsg(server,objJSON.toString(), serviceName);
 			c1.checkMsg(server, "joao");
+			
 		}
 	}
 
