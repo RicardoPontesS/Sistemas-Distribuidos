@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import servidor.InterfaceServer;
 import servidor.Servidor;
 import java.rmi.RemoteException;
+import java.io.FileWriter;
 import java.net.MalformedURLException;
 import java.rmi.ConnectException;
 import java.rmi.Naming;
@@ -42,6 +43,8 @@ public class Cliente {
 			String serviceName="ChatSistemasDistribuidos";
 			
 			serverIf = ( InterfaceServer )Naming.lookup("rmi://" + hostName + "/" + serviceName);	
+			FileWriter arquivoTexto = null;
+			JSONObject objJson = new JSONObject();
 			Cliente c1 = new Cliente("joao");
 			Cliente c2 = new Cliente("maria");
 			Servidor server = new Servidor();
