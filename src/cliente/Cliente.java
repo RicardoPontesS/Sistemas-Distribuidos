@@ -48,10 +48,11 @@ public class Cliente {
 			Cliente c1 = new Cliente("joao");
 			Cliente c2 = new Cliente("maria");
 			Servidor server = new Servidor();
-
-			c1.sendMsg(server,"maria", "olá, tudo bem?");
-			//c1.sendMsg(server, "maria", "ola tudo bem");
-			//c1.sendMsg(server, "maria", "?");
+			
+			objJson.put(server, "maria");
+			objJson.put("maria", "Olá, tudo bem?");
+			
+			//c1.sendMsg(server,"maria", "olá, tudo bem?");
 			c1.checkMsg(server, "joao");
 		}
 	}
