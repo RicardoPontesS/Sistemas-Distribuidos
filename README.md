@@ -9,4 +9,19 @@ Inicialmente, a base do trabalho se dá pela aplicação de cinco classes ao tod
 Inicialmente desenvolvemos a classe do Cliente, ao qual possui dois métodos principais. Sendo eles: 
 
 •	sendMsg: Tem como objetivo enviar uma mensagem para algum destinatário.
+
 •	checkMsg: Retorna ao usuário quantas mensagens o mesmo tem de um determinado remetente.
+
+![image](https://user-images.githubusercontent.com/105815500/206910157-306ea9be-16b7-43c2-a4c7-e9e2f613eba8.png)
+
+A classe Cliente também vai contar com alguns atributos próprios, como:
+
+•	Nome: Responsável pela identificação do cliente.
+
+•	serverIf : Serve como um link para o acesso a interface do servidor.
+
+![image](https://user-images.githubusercontent.com/105815500/206910199-119b5cc5-d9cc-4434-ba89-0b6a48379f73.png)
+
+Passando para a classer Servidor, a mesma conta com inicialmente três principais métodos, sendo eles:
+
+•	
