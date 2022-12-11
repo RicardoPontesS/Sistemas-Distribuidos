@@ -56,8 +56,11 @@ Desta forma, para enviar uma mensagem, é necessário a chamada remota do métod
 ![image](https://user-images.githubusercontent.com/105815500/206911511-dd5b455d-e004-4644-968d-650038585908.png)
 
 Para a execução correta do programa, é necessário primeiramente executar a classe Servidor e assim, a classe Cliente. No console será apresentado ambas instruções:
+
 ![image](https://user-images.githubusercontent.com/105815500/206911642-b1951bf5-6631-46a7-bb1c-5e427191a556.png)
+
 (Após a execução do servidor ser bem sucedida)
 
 ![image](https://user-images.githubusercontent.com/105815500/206911702-68e2a4cb-4fc3-476a-ada1-b240c7f4c5c9.png)
+
 (Após a execução do cliente com tais instâncias)
