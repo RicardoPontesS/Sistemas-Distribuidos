@@ -35,6 +35,7 @@ Passando para a classer Servidor, a mesma conta com inicialmente três principai
 A classe Servidor também conta com alguns atributos específicos, como:
 
 • hostName: Referencia o local que será disponibilizado a aplicação
+
 • serviceName: Nome da aplicação
 
 ![image](https://user-images.githubusercontent.com/105815500/206910844-8827e2bc-2b35-41ec-87ee-e82ba13c4bab.png)
