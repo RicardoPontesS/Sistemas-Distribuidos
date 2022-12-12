@@ -44,7 +44,7 @@ Já para as interfaces, temos que a interface do Cliente conta com as duas decla
 
 ![image](https://user-images.githubusercontent.com/105815500/206911185-b91cdb02-66d9-49b8-a6a6-dd5b6b9f20a2.png)
 
-A interface do servidor também vai contar com a declaração desses métodos abstratos que está sendo utilizado na classe Servidor, como pode ser visto abaixo.
+A interface do servidor também vai contar com a declaração desses métodos abstratos que estão sendo utilizados na classe Servidor, como pode ser visto abaixo.
 
 ![image](https://user-images.githubusercontent.com/105815500/206911211-87f99c8a-8581-4ed7-a3b9-6837913cb7e2.png)
 
