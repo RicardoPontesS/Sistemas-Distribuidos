@@ -51,7 +51,7 @@ Por fim, para fazer a comunicação entre os clientes é feito inicialmente duas
 
 ![image](https://user-images.githubusercontent.com/105815500/206911390-3ca378d7-23fb-417e-9fac-00fda2cfd94a.png)
 
-Desta forma, para enviar uma mensagem, é necessário a chamada remota do método, sendMsg, levando a instancia da classe Servidor, o destinarário e por fim, a mensagem que se deseja. Abaixo será apresentado um exemplo para maior entendimento.
+Desta forma, para enviar uma mensagem, é necessário a chamada remota do método, sendMsg, levando a instância da classe Servidor, o destinatário e por fim, a mensagem que se deseja. Abaixo será apresentado um exemplo para maior entendimento.
 
 ![image](https://user-images.githubusercontent.com/105815500/206911511-dd5b455d-e004-4644-968d-650038585908.png)
 
