@@ -39,7 +39,7 @@ A classe Servidor também conta com alguns atributos específicos, como:
 
 ![image](https://user-images.githubusercontent.com/105815500/206910844-8827e2bc-2b35-41ec-87ee-e82ba13c4bab.png)
 
-Já para as interfaces, temos que a interface do Clinete conta com as duas declarações dos dois métodos abstratos:
+Já para as interfaces, temos que a interface do Cliente conta com as duas declarações dos dois métodos abstratos:
 
 ![image](https://user-images.githubusercontent.com/105815500/206911185-b91cdb02-66d9-49b8-a6a6-dd5b6b9f20a2.png)
 
